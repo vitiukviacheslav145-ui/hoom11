@@ -1,39 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Псевдоелементи та z-index</h1>
+    <h1>CSS Hover Effects</h1>
 
-<h2>1. Декоративні стилі</h2>
+    <section>
+        <h2>Завдання A — Картка-візитка</h2>
 
-<blockquote>
-    CSS допомагає створювати красиві веб-сторінки.
-</blockquote>
+        <div class="business-card">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400"
+                 alt="Фото профілю">
+            <h3>Анна Коваленко</h3>
+            <p>Web Designer</p>
+            <p>Створюю сучасні вебсайти</p>
+        </div>
+    </section>
 
-<button class="btn">Дізнатися більше</button>
+    <section>
+        <h2>Завдання B — Галерея</h2>
 
-<h2>2. Картка з z-index</h2>
+        <div class="gallery">
+            <img class="gallery-item"
+                 src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=500"
+                 alt="Гори">
 
-<div class="card">
-    <img src="/imeges/Screenshot 2026-10-04 112040.png">
-    <span>NEW</span>
-    <div class="text">
-        <h3>Моя картка</h3>
-        <p>Це приклад картки з затемненням.</p>
+            <img class="gallery-item"
+                 src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=500"
+                 alt="Природа">
+
+            <img class="gallery-item"
+                 src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=500"
+                 alt="Захід сонця">
+        </div>
+    </section>
+
+    <section>
+        <h2>Завдання C — Портфоліо з Overlay</h2>
+
+        <div class="portfolio-card">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800"
+                 alt="Робоче місце">
+
+            <div class="overlay">
+                <h3>Мій вебпроєкт</h3>
+                <p>Сучасний адаптивний дизайн сайту.</p>
+                <button type="button">Переглянути</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Завдання D — Модальне вікно товару</h2>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+                 alt="Навушники">
+
+            <h3>Бездротові навушники</h3>
+            <p class="price">1499 грн</p>
+
+            <button class="open-modal" type="button">
+                Переглянути
+            </button>
+        </div>
+    </section>
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+
+            <button class="close-modal" type="button"
+                    aria-label="Закрити">&times;</button>
+
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600"
+                 alt="Бездротові навушники">
+
+            <h2>Бездротові навушники</h2>
+            <p class="price">1499 грн</p>
+
+            <p>
+                Якісне звучання, зручна конструкція
+                та сучасний дизайн.
+            </p>
+
+            <button class="cart-button" type="button">
+                Додати в кошик
+            </button>
+
+        </div>
     </div>
-</div>
 
-<h2>3. Анімована картка</h2>
-
-<div class="animation">
-    <h3>Наведи на мене</h3>
-    <p>Фон плавно змінюється.</p>
-</div>
-
+    <script src="script.js"></script>
 </body>
 </html>
